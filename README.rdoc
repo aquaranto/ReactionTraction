@@ -1,0 +1,5 @@
+ReactionTraction:
+
+Currently not totally complete, but this will be my next project.  I want to be able to collect reactions of people watching online advertising in order to get data around relevance.  Hopefully this will help advertisers get better traction within their target market audience.
+
+Work in progress as of 8/6/12.

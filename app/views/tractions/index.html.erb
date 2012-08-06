@@ -1,0 +1,31 @@
+<h1>Listing tractions</h1>
+
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Idea</th>
+    <th></th>
+    <th></th>
+    <th></th>
+	<th></th>
+  </tr>
+
+<% @tractions.each do |traction| %>
+  <tr>
+    <td><%= traction.name %></td>
+    <td><%= traction.value %></td>
+    <td><%= traction.idea %></td>
+    <td><%= link_to 'Show', traction %></td>
+    <td><%= link_to 'Edit', edit_traction_path(traction) %></td>
+    <td><%= link_to 'Destroy', traction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td><%= link_to 'Dominate', dominate %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Traction', new_traction_path %>

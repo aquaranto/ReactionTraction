@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @traction.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @traction.value %>
+</p>
+
+<p>
+  <b>Idea:</b>
+  <%= @traction.idea %>
+</p>
+
+
+<%= link_to 'Edit', edit_traction_path(@traction) %> |
+<%= link_to 'Back', tractions_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@traction) do |f| %>
+  <% if @traction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@traction.errors.count, "error") %> prohibited this traction from being saved:</h2>
+
+      <ul>
+      <% @traction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :idea %><br />
+    <%= f.text_field :idea %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

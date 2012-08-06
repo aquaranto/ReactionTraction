@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReactionTraction</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div .="navbar navbar-fixed-bottom">
+	<div class="navbar-inner">
+		<div class='container'>
+			<a class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'>
+				<span class='icon-bar'></span>
+			</a>
+			<a><%= link_to 'REACTION!', root_path, :class => 'brand' %></a>
+		</div>
+	</div>	
+</div>		
+
+<% end %>		
+
+				
+				
+				
+				
+<%= yield %>
+
+</body>
+</html>
