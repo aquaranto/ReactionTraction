@@ -1,6 +1,6 @@
 class Migration1985 < ActiveRecord::Migration
   def up
-    remove_column :cost
+    add_column :tractions, :cost, :integer
   end
 
   def down
